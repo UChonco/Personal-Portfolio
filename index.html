@@ -3,26 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio</title>
     <!-- == CSS Links == -->
     <link rel="stylesheet" href="/Assets/CSS/style.css">
     <!-- == End == -->
+
+    <!-- javascript links-->
+    <script src="/JS/index.js"></script>
+     
+    <!-- End -->
+
 </head>
 <body>
-  <header class="header">
-  <a href="" class="logo">Unathi</a>
-  <div class="moon"><ion-icon name="moon-outline"></ion-icon></div>
+    <!-- == Header Section == -->
+  <header class="header" >
+  <a href="" class="logo">Portfolio</a>
+  <div class="sun"  onclick="toggleTheme()"><ion-icon name="sunny-outline"></ion-icon></div>
   </header>
-  <div class="navcontainer">
+   <!-- == End == -->
+
+  <!-- == Home section == -->
+   
+
+  <section class="home" id="home">
+    <div class="home-content">
+    <h3>Hello It's Me</h3>
+    <h1>Unathi Chonco</h1>
+    <h3>And I'm a <span>Web Developer</span></h3>
+    <p>I'm a young and ambitious individual. <br> Who believe Hard work can get you anyway you want life
+      
+      </p>
+    <div class="social-media">
+      <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+      <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+      <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+    </div>
+    <a href="" class="btn">Download CV</a>
+    </div>
+   <div class="home-img">
+      <img src="/Images/Mypic.png" alt="home-img">
+    </div>
+
+  <!-- == Navbar  Section == -->
+  <div class="navcontainer" >
     <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#home">About</a>
-        <a href="#home">Service</a>
-        <a href="#home">Portfolio</a>
-        <a href="#home">Contact</a>
+        <a href="#home"><ion-icon name="home-outline"></ion-icon></a>
+        <a href="#about"><ion-icon name="person-outline"></ion-icon></a>
+        <a href="#service"><ion-icon name="document-text-outline"></ion-icon></a> 
+        <a href="#portfolio"><ion-icon name="briefcase-outline"></ion-icon></a>
+        <a href="#contact"><ion-icon name="send-outline"></ion-icon></a>
      </nav>
   </div>  
+  <!-- == End == -->
 
+  </section>
+  <!-- == End == -->
+
+
+  <!-- == About Section == -->
+   <section class="about"   id="about">
+    <div class="about-imag">
+        <img src="/Images/Mypic.png" alt="home-img">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About<span>Me</span></h2>
+      <h3>Web Developer</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aspernatur harum nulla perspiciatis tempora saepe!  <br>Consectetur libero laborum optio vel quibusdam quos <br>distinctio inventore beatae quo.</p>
+      <a href="" class="btn">Read More</a>
+    </div>
+
+
+   </section>
+  <!-- == End == -->
+
+  <!-- == Service Section  == -->
+  <section id="service">
+   <h2 class="heading">Our<span>Service</span></h2>
+   <div class="service-container">
+      <div class="service-box">
+
+      </div>
+     </div>
+
+  </section>
+  <!-- == End == -->
 
  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
