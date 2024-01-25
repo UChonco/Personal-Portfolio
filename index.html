@@ -20,7 +20,7 @@
     <!-- == Header Section == -->
   <header class="header" >
   <a href="" class="logo">Portfolio</a>
-  <div class="sun"  onclick="toggleTheme()"><ion-icon name="sunny-outline"></ion-icon></div>
+  <div class="icon"  onclick="toggleMode()"><ion-icon name="sunny-outline"></ion-icon></div>
   </header>
    <!-- == End == -->
 
@@ -31,7 +31,7 @@
     <div class="home-content">
     <h3>Hello It's Me</h3>
     <h1>Unathi Chonco</h1>
-    <h3>And I'm a <span>Web Developer</span></h3>
+    <h3>And I'm a <span  id="element">Web Developer</span></h3>
     <p>I'm a young and ambitious individual. <br> Who believe Hard work can get you anyway you want life
       
       </p>
@@ -84,27 +84,34 @@
   <section class="service" id="service">
    <h2 class="heading">Our<span>Service</span></h2>
    <div class="service-container">
-      <div class="service-box">
-     <ion-icon name="code-slash-outline" class="icons"></ion-icon>
-     <h3>Web Developer</h3>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
-     <a href="" class="btn">Read More</a>
-      </div>
-        <div class="service-box">
+
+        <div id="service-box1" class="service-box">
     <ion-icon name="shield-half-outline" class="icons"></ion-icon>
      <h3>Cyber Security</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
      <a href="" class="btn">Read More</a>
       </div>
-        <div class="service-box">
+
+      <div id="service-box2" class="service-box">
+     <ion-icon name="code-slash-outline" class="icons"></ion-icon>
+     <h3>Web Developer</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+     <a href="" class="btn">Read More</a>
+      </div>
+
+    
+
+        <div id="service-box3" class="service-box">
      <ion-icon name="logo-microsoft" class="icons"></ion-icon>
      <h3>Software developer</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
      <a href="" class="btn">Read More</a>
       </div>
+
      </div>
 
   </section>
@@ -118,7 +125,7 @@
     <div class="portfolio-container">
 
        <div class="portfolio-box">
-     <img src="/Images/1_resized.jpg" alt="">
+     <img src="/Images/pic1.jpg" alt="">
       <div class="portfolio-layer">
         <h4>web design</h4>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -128,7 +135,7 @@
     
      <div class="portfolio-box">
 
-    <img src="/Images/1_resized.jpg" alt="">
+    <img src="/Images/pic2.jpg" alt="">
       <div class="portfolio-layer">
         <h4>web design</h4>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -138,7 +145,7 @@
 
      <div class="portfolio-box">
 
-      <img src="/Images/1_resized.jpg" alt="">
+      <img src="/Images/pic3.jpg" alt="">
       <div class="portfolio-layer">
         <h4>web design</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -149,7 +156,7 @@
 
    <div class="portfolio-box">
 
-     <img src="/Images/1_resized.jpg" alt="">
+     <img src="/Images/pic4.jpg" alt="">
       <div class="portfolio-layer">
         <h4>web design</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -158,7 +165,7 @@
     </div>
     
      <div class="portfolio-box">
-      <img src="/Images/1_resized.jpg" alt="">
+      <img src="/Images/pic5.jpg" alt="">
       <div class="portfolio-layer">
         <h4>web design</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -168,7 +175,7 @@
 
      <div class="portfolio-box">
 
-      <img src="/Images/1_resized.jpg" alt="">
+      <img src="/Images/pic6.jpg" alt="">
       <div class="portfolio-layer">
         <h4>web design</h4>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -186,14 +193,14 @@
 
     <form action="">
       <div class="input-box">
-        <input type="text" name="" id="" placeholder="Full Name">
-        <input type="email" name="" id="" placeholder="Email Address">
+        <input type="text" name=""  id="input1" placeholder="Full Name">
+        <input type="email" name="" id="input2" placeholder="Email Address">
       </div>
             <div class="input-box">
-        <input type="number" name="" id="" placeholder="Mobile Number">
-        <input type="text" name="" id="" placeholder="Email Subject">
+        <input type="number" name="" id="input3" placeholder="Mobile Number">
+        <input type="text" name=""   id="input4" placeholder="Email Subject">
       </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <textarea name="" id="input5" cols="30" rows="10" placeholder="Your Message"></textarea>
       <input type="submit" value="Send Message" class="btn">
       
     </form>
@@ -208,12 +215,8 @@
   </footer>
   <!-- == End == -->
 
- <!--Scroll Reveal.com links-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-      <script>
-        ScrollReveal({ reset: true });
-    </script>
-     <!-- End -->
+  
+
 
  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
